@@ -14,7 +14,7 @@ import (
 	"go-products.com/m/internal/product/domain"
 	"go-products.com/m/internal/product/infrastructure/persistance"
 	"go-products.com/m/internal/product/infrastructure/persistance/migrations"
-	database2 "go-products.com/m/internal/shared/database"
+	sharedDatabaseUtils "go-products.com/m/internal/shared/database"
 )
 
 //go:embed testdata/*.json
@@ -162,7 +162,7 @@ func TestIntegration_HandleGetProducts(t *testing.T) {
 		},
 	}
 
-	database, err := database2.GenerateDatabaseConnection(database2.DatabaseConnection{
+	database, err := sharedDatabaseUtils.GenerateDatabaseConnection(sharedDatabaseUtils.DatabaseConnection{
 		DatabaseName: "file::memory:?cache=shared",
 	}, migrations.CreateProductsDatabase)
 	assertions.NoError(err)
