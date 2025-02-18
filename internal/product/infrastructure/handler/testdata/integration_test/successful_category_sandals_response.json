@@ -1,0 +1,15 @@
+{
+  "content": [
+    {
+      "sku": "000004",
+      "name": "Naima embellished suede sandals",
+      "category": "sandals",
+        "price": {
+            "original": 79500,
+            "final": 79500,
+            "discount_percentage": null,
+            "currency": "EUR"
+        }
+    }
+  ]
+}

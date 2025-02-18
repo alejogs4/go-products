@@ -1,0 +1,37 @@
+{
+  "content": [
+    {
+      "sku": "0001",
+      "name": "Product 1",
+      "category": "sandals",
+      "price": {
+        "original": 100,
+        "final": 100,
+        "discount_percentage": null,
+        "currency": "EUR"
+      }
+    },
+    {
+        "sku": "0002",
+        "name": "Product 2",
+        "category": "boots",
+        "price": {
+            "original": 100,
+            "final": 70,
+            "discount_percentage": "30%",
+            "currency": "EUR"
+        }
+    },
+    {
+        "sku": "000003",
+        "name": "Product 3",
+        "category": "sandals",
+        "price": {
+            "original": 100,
+            "final": 85,
+            "discount_percentage": "15%",
+            "currency": "EUR"
+        }
+    }
+  ]
+}
